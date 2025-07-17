@@ -10,31 +10,31 @@
 @define-color foreground #505a60;
 
 * {
-    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;  /* Slightly smaller font size */
-    font-weight: 900;
-    margin: 0;
-    padding: 0;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+  font-family: "JetBrainsMono Nerd Font 12";
+  font-size: 14px; /* Slightly smaller font size */
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 /* Reset all styles */
 * {
-    border: none;
-    border-radius: 3px;
-    min-height: 0;
-    margin: 0.2em 0.3em 0.2em 0.3em;
+  border: none;
+  border-radius: 3px;
+  min-height: 0;
+  margin: 0.2em 0.3em 0.2em 0.3em;
 }
 
 /* The whole bar */
 #waybar {
-    background-color: transparent;
-    color: @text;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    border-radius: 0px;
-    margin: 0px 0px;
+  background-color: transparent;
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  margin: 0px 0px;
 }
 
 window#waybar.hidden {
@@ -42,43 +42,43 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    padding: 3px 5px;  /* Adjusted padding to reduce height */
-    margin: 3px 5px;    /* Reduced margin slightly */
-    border-radius: 6px;
-    color: @text;
-    background-color: @background;
-    transition: all 0.3s ease-in-out;
-    font-size: 13px;  /* Slightly smaller font size */
+  padding: 3px 5px; /* Adjusted padding to reduce height */
+  margin: 3px 5px; /* Reduced margin slightly */
+  border-radius: 6px;
+  color: @text;
+  background-color: @background;
+  transition: all 0.3s ease-in-out;
+  font-size: 13px; /* Slightly smaller font size */
 }
 
 #workspaces button.active {
-    color: @text-hilighted;
-    background: @foreground;
+  color: @text-hilighted;
+  background: @foreground;
 }
 
 #workspaces button:hover {
-    background: @foreground;
+  background: @foreground;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+  background-color: @red;
 }
 
 #workspaces {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 3px 6px;  /* Adjusted padding to reduce height */
+  background-color: @background;
+  border-radius: 14px;
+  padding: 3px 6px; /* Adjusted padding to reduce height */
 }
 
 #window {
-    background-color: @background;
-    font-size: 15px;   /* Slightly smaller font size */
-    font-weight: 800;
-    color: @text;
-    border-radius: 14px;
-    padding: 3px 6px;  /* Reduced padding */
-    margin: 2px;
-    opacity: 1;
+  background-color: @background;
+  font-size: 15px; /* Slightly smaller font size */
+  font-weight: 800;
+  color: @text;
+  border-radius: 14px;
+  padding: 3px 6px; /* Reduced padding */
+  margin: 2px;
+  opacity: 1;
 }
 
 #clock,
@@ -110,225 +110,225 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 6px;  /* Adjusted padding */
+  background-color: @background;
+  border-radius: 14px;
+  padding: 6px; /* Adjusted padding */
 }
 
 #custom-screenshot_t {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 6px;
+  background-color: @background;
+  border-radius: 14px;
+  padding: 6px;
 }
 
 #custom-spotify {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 3px 12px;
+  background-color: @background;
+  border-radius: 14px;
+  padding: 3px 12px;
 }
 
 #tray {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 6px;  /* Adjusted padding */
+  background-color: @background;
+  border-radius: 14px;
+  padding: 6px; /* Adjusted padding */
 }
 
 #cpu {
-    color: @red;
-    background-color: @background;
-    padding: 6px;
+  color: @red;
+  background-color: @background;
+  padding: 6px;
 }
 
 #memory {
-    color: @text;
-    background-color: @background;
-    padding: 6px;
+  color: @text;
+  background-color: @background;
+  padding: 6px;
 }
 
 #custom-power {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 6px;
+  background-color: @background;
+  border-radius: 14px;
+  padding: 6px;
 }
 
 #custom-storage {
-    background-color: @background;
-    border-radius: 14px;
-    padding: 6px;
+  background-color: @background;
+  border-radius: 14px;
+  padding: 6px;
 }
 
 #custom-launcher {
-    background-color: @background;
-    color: @text;
-    border-radius: 7.5px;
-    padding: 3px 6px;  /* Adjusted padding */
+  background-color: @background;
+  color: @text;
+  border-radius: 7.5px;
+  padding: 3px 6px; /* Adjusted padding */
 }
 
 #custom-weather.severe {
-    color: @red;
+  color: @red;
 }
 
 #custom-weather.sunnyDay {
-    color: @text-hilighted;
+  color: @text-hilighted;
 }
 
 #custom-weather.clearNight {
-    color: @blue;
+  color: @blue;
 }
 
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight {
-    color: @blue;
+  color: @blue;
 }
 
 #custom-weather.rainyDay,
 #custom-weather.rainyNight {
-    color: @darkblue;
+  color: @darkblue;
 }
 
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight {
-    color: @lightblue;
+  color: @lightblue;
 }
 
 #custom-weather.default {
-    color: @text;
+  color: @text;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 #pulseaudio {
-    color: @text;
+  color: @text;
 }
 
 #backlight {
-    color: @text;
+  color: @text;
 }
 
 #clock {
-    color: @text;
+  color: @text;
 }
 
 #battery {
-    color: @text;
+  color: @text;
 }
 
 #battery.charging,
 #battery.full,
 #battery.plugged {
-    color: @green;
+  color: @green;
 }
 
 @keyframes blink {
-    to {
-        background-color: @background;
-        color: @text;
-    }
+  to {
+    background-color: @background;
+    color: @text;
+  }
 }
 
 #battery.critical:not(.charging) {
-    color: @red;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  color: @red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 label:focus {
-    background-color: @background;
+  background-color: @background;
 }
 
 #disk {
-    background-color: @red;
+  background-color: @red;
 }
 
 #bluetooth {
-    color: @blue;
+  color: @blue;
 }
 
 #bluetooth.disconnected {
-    color: @red;
+  color: @red;
 }
 
 #network {
-    color: @text;
+  color: @text;
 }
 
 #network.disconnected {
-    color: @red;
+  color: @red;
 }
 
 #custom-media {
-    background-color: @background;
-    color: @text;
-    min-width: 100px;
+  background-color: @background;
+  color: @text;
+  min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-    background-color: @background;
-    color: @green;
+  background-color: @background;
+  color: @green;
 }
 
 #custom-media.custom-vlc {
-    background-color: @background;
-    color: @yellow;
+  background-color: @background;
+  color: @yellow;
 }
 
 #temperature {
-    background-color: @yellow;
+  background-color: @background;
 }
 
 #temperature.critical {
-    background-color: @red;
+  background-color: @red;
 }
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
+  -gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: @red;
+  -gtk-icon-effect: highlight;
+  background-color: @red;
 }
 
 #idle_inhibitor {
-    background-color: @background;
+  background-color: @background;
 }
 
 #idle_inhibitor.activated {
-    background-color: @foreground;
-    color: @text;
+  background-color: @foreground;
+  color: @text;
 }
 
 #language {
-    background: @background;
-    color: @text;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+  background: @background;
+  color: @text;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
 #keyboard-state {
-    background: @background;
-    color: @text;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+  background: @background;
+  color: @text;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
 #keyboard-state > label {
-    padding: 0 0px;
+  padding: 0 0px;
 }
 
 #keyboard-state > label.locked {
-    background:@background;
+  background: @background;
 }
